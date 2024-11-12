@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet1 : MonoBehaviour
 {
     public float speed = 10f; // Bullet speed
     public float lifeTime = 5f; // Bullet lifetime

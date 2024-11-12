@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class TopDownCharacterController : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    private Rigidbody2D rb;
+    private Rigidbody rb;
     private Vector2 moveInput;
     [SerializeField] private GameObject bulletprefab;
     [SerializeField] private Transform firepoint;
@@ -13,7 +13,7 @@ public class TopDownCharacterController : MonoBehaviour
     
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
         _mainCamera = Camera.main;
     }
 
