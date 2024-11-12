@@ -1,56 +1,52 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class TopDownCharacterController : MonoBehaviour
+public class TopDownShooterController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    private Rigidbody rb;
-    private Vector2 moveInput;
-    [SerializeField] private GameObject bulletprefab;
-    [SerializeField] private Transform firepoint;
-    [SerializeField] private LayerMask damagelayerMask;
-    private Camera _mainCamera;
-    
+    [SerializeField] private float moveSpeed = 100f;      // Скорость движения персонажа
+    [SerializeField] private float rotationSpeed = 700f;  // Скорость поворота персонажа
+
+    private Vector3 moveDirection;    // Направление движения
+    private Rigidbody rb;             // Ссылка на Rigidbody
+
     void Start()
     {
+        // Получаем ссылку на Rigidbody
         rb = GetComponent<Rigidbody>();
-        _mainCamera = Camera.main;
     }
 
     void Update()
     {
-        moveInput.x = Input.GetAxis("Horizontal");
-        moveInput.y = Input.GetAxis("Vertical");
-        Shoot();
-    }
+        // Получаем ввод от пользователя
+        float moveX = Input.GetAxisRaw("Horizontal"); // A/D или стрелки влево/вправ
+        float moveZ = Input.GetAxisRaw("Vertical");   // W/S или стрелки вверх/вниз
 
-    void FixedUpdate()
-    {
-        rb.linearVelocity = moveInput * moveSpeed;
-    }
+        // Вычисляем направление движения
+        moveDirection = new Vector3(moveX, 0f, moveZ).normalized;
 
-    private void Shoot()
-    {
-        if (Input.GetMouseButtonDown(0))
+        // Если персонаж двигается, то поворачиваем его в направлении движения
+        if (moveDirection.magnitude >= 0.1f)
         {
-
-            Vector3 mousePosition = _mainCamera.ScreenToWorldPoint(Input.mousePosition);
-            mousePosition.z = 0;
-            Vector2 direction = mousePosition - transform.position;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            Quaternion bulletrotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            Instantiate(bulletprefab, firepoint.position, bulletrotation);
-            Debug.Log("Shoot");
+            RotateTowardsMovementDirection();
         }
+
+        // Двигаем персонажа
+        MoveCharacter();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Функция для поворота персонажа в сторону движения
+    void RotateTowardsMovementDirection()
     {
-        if (LayerMaskUtil.ContainsLayer(damagelayerMask, collision.gameObject))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+        // Вычисляем угол между вектором направления и вектором вперед
+        Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+
+        // Плавно поворачиваем персонажа
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 
+    // Функция для движения персонажа
+    void MoveCharacter()
+    {
+        Vector3 velocity = moveDirection * moveSpeed * Time.deltaTime;
+        rb.MovePosition(transform.position + velocity);
+    }
 }
-
