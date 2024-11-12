@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &994049258843315535
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19655651
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19655651
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19655651
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0604415
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0604415
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0604415
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3240084944888637655, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      propertyPath: m_Name
+      value: Tower_Turret_MG
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 173768601915700040}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 176138154205545871}
+  m_SourcePrefab: {fileID: 100100000, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+--- !u!1 &75148704123035678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d973137607002c4ba65403c6494dca1, type: 3}
+  m_PrefabInstance: {fileID: 994049258843315535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &173768601915700040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75148704123035678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad507a3dcc61094483b4a428cf99d91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetTargetOnAttack: 0
+  prefabID: -1
+  instanceID: -1
+  unitName: popa
+  icon: {fileID: 21300000, guid: 92ebfcab98d167d45ba3b74abbf362e8, type: 3}
+  desp: popkiiiii)))
+  unitRadius: 0.25
+  targetPoint: {fileID: 0}
+  hp: 10
+  sh: 0
+  shStagger: 0
+  cooldown: 0
+  level: 0
+  statsList:
+  - buildDuration: 1
+    sellDuration: 1
+    expToNextUpgrade: 10
+    cost:
+    - 15
+    - 0
+    sellValue:
+    - 0
+    - 0
+    hp: 5
+    sh: 0
+    shRegen: 0.5
+    shStagger: 3
+    hpRate: 0
+    shRate: 0
+    armorType: 0
+    damageType: 0
+    speed: 3
+    dodge: 0
+    dmgReduc: 0
+    critReduc: 0
+    hit: 1
+    damageMin: 2
+    damageMax: 2
+    attackRange: 2
+    aoeRange: 0
+    cooldown: 1
+    critChance: 0
+    critMultiplier: 0
+    effectOnHitChance: 1
+    effectOnHitID: -1
+    overrideExistingEffect: 0
+    effectOnHitIDList: 
+    rscGain: []
+  effectImmunityList: 
+  attackTarget: {fileID: 0}
+  shootObject: {fileID: 0}
+  shootPoint: []
+  shootPointSpacing: 0.2
+  turretPivot: {fileID: 0}
+  barrelPivot: {fileID: 0}
+  aimInXAxis: 1
+  snapAiming: 1
+  aimSpeed: 20
+  aimed: 0
+  targetMode: 0
+  targetingFov: 360
+  targetingDir: 0
+  activeEffectMod:
+    prefabID: -1
+    instanceID: -1
+    icon: {fileID: 0}
+    name: Item
+    desp: Item's description
+    ID: 0
+    srcType: 4
+    srcPrefabID: 0
+    stackable: 0
+    duration: 1
+    durationRemain: 1
+    effType: 1
+    stun: 0
+    stats:
+      buildDuration: 1
+      sellDuration: 1
+      expToNextUpgrade: 10
+      cost: []
+      sellValue: []
+      hp: 5
+      sh: 0
+      shRegen: 0.5
+      shStagger: 3
+      hpRate: 0
+      shRate: 0
+      armorType: 0
+      damageType: 0
+      speed: 3
+      dodge: 0
+      dmgReduc: 0
+      critReduc: 0
+      hit: 1
+      damageMin: 2
+      damageMax: 2
+      attackRange: 2
+      aoeRange: 0
+      cooldown: 1
+      critChance: 0
+      critMultiplier: 0
+      effectOnHitChance: 1
+      effectOnHitID: -1
+      overrideExistingEffect: 0
+      effectOnHitIDList: 
+      rscGain: []
+  activeEffectMul:
+    prefabID: -1
+    instanceID: -1
+    icon: {fileID: 0}
+    name: Item
+    desp: Item's description
+    ID: 0
+    srcType: 4
+    srcPrefabID: 0
+    stackable: 0
+    duration: 1
+    durationRemain: 1
+    effType: 1
+    stun: 0
+    stats:
+      buildDuration: 1
+      sellDuration: 1
+      expToNextUpgrade: 10
+      cost: []
+      sellValue: []
+      hp: 5
+      sh: 0
+      shRegen: 0.5
+      shStagger: 3
+      hpRate: 0
+      shRate: 0
+      armorType: 0
+      damageType: 0
+      speed: 3
+      dodge: 0
+      dmgReduc: 0
+      critReduc: 0
+      hit: 1
+      damageMin: 2
+      damageMax: 2
+      attackRange: 2
+      aoeRange: 0
+      cooldown: 1
+      critChance: 0
+      critMultiplier: 0
+      effectOnHitChance: 1
+      effectOnHitID: -1
+      overrideExistingEffect: 0
+      effectOnHitIDList: 
+      rscGain: []
+  allEffectList: []
+  animatorT: {fileID: 0}
+  clipIdle: {fileID: 0}
+  clipHit: {fileID: 0}
+  clipDestroyed: {fileID: 0}
+  clipAttack: {fileID: 0}
+  animationAttackDelay: 0
+  clipMove: {fileID: 0}
+  clipSpawn: {fileID: 0}
+  clipDestination: {fileID: 0}
+  clipConstruct: {fileID: 0}
+  clipDeconstruct: {fileID: 0}
+  towerType: 0
+  targetGroup: 0
+  isPreview: 0
+  prebuilt: 0
+  disableSelling: 0
+  hideInInspector: 0
+  constructState: 0
+  limitInScene: 0
+  effectBuilding:
+    obj: {fileID: 0}
+    autoDestroy: 1
+    duration: 1.5
+  effectBuilt:
+    obj: {fileID: 0}
+    autoDestroy: 1
+    duration: 1.5
+  effectSold:
+    obj: {fileID: 0}
+    autoDestroy: 1
+    duration: 1.5
+  effectDestroyed:
+    obj: {fileID: 0}
+    autoDestroy: 1
+    duration: 1.5
+  soundBuilding: {fileID: 0}
+  soundBuilt: {fileID: 0}
+  soundUpgrading: {fileID: 0}
+  soundUpgraded: {fileID: 0}
+  soundSold: {fileID: 0}
+  soundDestroyed: {fileID: 0}
+  radius: 0.5
+  supportTgtList: []
+  supportSrcList: []
+  buildPlatform: {fileID: 0}
+  nodeID: 0
+  useExpForUpgrade: 0
+  experience: 0
+  upgradeTowerList: []
+--- !u!135 &176138154205545871
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75148704123035678}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

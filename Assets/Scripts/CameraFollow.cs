@@ -2,20 +2,15 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;  // ѕерсонаж, за которым будет следовать камера
-    public float followSpeed = 5f;  // —корость, с которой камера будет следовать за персонажем
-    public float fixedY = 10f; // ‘иксированна€ высота камеры
+    public Transform target; // цель (персонаж)
+    
 
-    private void LateUpdate()
+    void LateUpdate()
     {
-        // ѕолучаем желаемую позицию камеры (с учЄтом смещени€)
-        Vector3 targetPosition = target.position;
-        targetPosition.y = fixedY;
-
-        // ѕлавно перемещаем камеру к новой позиции без вращени€
-        transform.position = Vector3.Lerp(transform.position, targetPosition, followSpeed * Time.deltaTime);
-
-        // «афиксируем поворот камеры, чтобы она не вращалась
-        transform.rotation = Quaternion.Euler(90f, 0f, 0f);  // ѕоворот камеры дл€ вида сверху
+        if (target != null)
+        {
+            transform.position = target.position;
+            transform.LookAt(target.position); // поворот камеры на персонажа
+        }
     }
 }
